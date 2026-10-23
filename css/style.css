@@ -4,6 +4,68 @@
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 200px;
+/*Bootstrap styling*/
+
+:root {
+    --bs-primary: #344e41;
+    --bs-primary-rgb: rgb(52 78 65);
+    --bs-secondary: #dad7cd;
+    --bs-secondary-rgb: rgb(218 215 205);
+    --bs-body-bg: #344e41;
+    --bs-body-bg-rgb: rgb(52 78 65);
+    --bs-body-color: #dad7cd ;
+    --bs-body-color-rgb: rgb(218 215 205);
+    --bs-body-font-family: "Roboto Mono", monospace;
+}
+
+.btn-primary {
+    --bs-btn-bg: #dad7cd;  
+    --bs-btn-color: #344e41;
+    --bs-btn-border-color: #2a4747;
+    --bs-btn-border-width: 2px;
+    --bs-btn-hover-bg: #fa7e61;       
+    --bs-btn-hover-border-color: #2a4747;
+}
+
+
+/*header styling*/
+
+.logo-title {
+    color: var(--bs-secondary);
+    font-size: 1.5rem;
+}
+
+.logo-title:hover {
+    color: inherit;
+}
+
+/*footer styling*/
+
+
+
+/*extra styling*/
+
+.live-indicator img {
+    width: 14px;
+    height: 14px;
+    fill: var(--bs-primary-rgb); 
+    vertical-align: middle;
+    display: inline-block;
+    
+    animation: pulse-live 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-live {
+    0% {
+        transform: scale(0.85);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(0.90);
+        opacity: 1; 
+    }
+    100% {
+        transform: scale(0.85);
+        opacity: 0.6;
+    }
 }
