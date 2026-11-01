@@ -116,6 +116,19 @@
     left: 0;
 }
 
+.project-image {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.project-link {
+    font-size: 0.7rem;
+}
+
+.project-link:hover {
+    background-color: #fa7e61;
+}
 /*footer styling*/
 
 
