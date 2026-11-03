@@ -54,6 +54,7 @@
 /*main styling*/
 .portfolio-main {
     flex: 1;
+    min-height: 0;
 }
 
 .home-tabs {
@@ -118,7 +119,7 @@
 
 .project-image {
     width: 200px;
-    height: 100px;
+    aspect-ratio: 2 / 1;
     object-fit: cover;
 }
 
@@ -138,7 +139,6 @@
 .live-indicator img {
     width: 14px;
     height: 14px;
-    fill: var(--bs-primary-rgb); 
     vertical-align: middle;
     display: inline-block;
     
@@ -194,5 +194,13 @@
 
     .floating-label {
         font-size: 1.1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .live-indicator img,
+    .floating-label {
+        animation: none;
+        transition: none;
     }
 }

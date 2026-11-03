@@ -35,112 +35,123 @@
 			</header>
 			
 			<main class="portfolio-main">
-				<div class="container my-3">
-					<div class="row">
+				<div class="container my-3 h-100">
+					<div class="row h-100">
 						<div class="col-md-7 d-flex flex-column my-2">
-							<ul class="nav nav-tabs flex-nowrap justify-content-center justify-content-sm-start home-tabs fw-bold" role="tablist">
+							<ul class="nav nav-tabs flex-nowrap justify-content-center justify-content-sm-start home-tabs fw-bold" aria-label="Portfolio navigatie" role="tablist">
 								<li class="nav-item">
-									<a href="#welkom" class="nav-link active p-2 px-md-3" data-bs-toggle="tab">Welkom</a>
+									<a href="#welkom" class="nav-link active p-2 px-md-3" data-bs-toggle="tab" id="welkom-tab" role="tab" aria-controls="welkom" aria-selected="true">Welkom</a>
 								</li>
 								<li class="nav-item">
-									<a href="#projecten" class="nav-link p-2 px-md-3" data-bs-toggle="tab">Projecten</a>
+									<a href="#projecten" class="nav-link p-2 px-md-3" data-bs-toggle="tab" id="projecten-tab" role="tab" aria-controls="projecten" aria-selected="false">Projecten</a>
 								</li>
 								<li class="nav-item">
-									<a href="#leerproces" class="nav-link p-2 px-md-3" data-bs-toggle="tab">Leerproces</a>
+									<a href="#leerproces" class="nav-link p-2 px-md-3" data-bs-toggle="tab" id="leerproces-tab" role="tab" aria-controls="leerproces" aria-selected="false">Leerproces</a>
 								</li>
 								<li class="nav-item">
-									<a href="#over-mij" class="nav-link p-2 px-md-3" data-bs-toggle="tab">Over mij</a>
+									<a href="#over-mij" class="nav-link p-2 px-md-3" data-bs-toggle="tab" id="over-mij-tab" role="tab" aria-controls="over-mij" aria-selected="false">Over mij</a>
 								</li>
 							</ul>
 							
 							
-								<div class="tab-content my-4">
-									<div class="tab-pane container active" id="welkom">
-										<p class="bg-dark rounded-pill my-3 py-3 px-2 ps-md-4 text-primary full-stack-pill"><span class="live-indicator"><img src="images/technologies/live-indicator-orange.svg" alt=""></span> full-stack developer in ontwikkeling</p>
-										<h1 class="h1 fw-bold ms-1 text-white homepage-title ">"Gevormt door <span class="accent">uitdaging</span>,<br> gedreven door <span class="accent">resultaat</span>."</h1>
-										<div class="container mt-5 gap-1">
-											<div class="row">
-												<div class="col-sm-6 d-flex flex-row justify-content-around px-0">
-													<div class="d-flex flex-column align-items-center">
-														<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
-													</div>
-													<div class="d-flex flex-column align-items-center">
-														<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
-													</div>
-													<div class="d-flex flex-column align-items-center">
-														<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
-													</div>
-													<div class="d-flex flex-column align-items-center">
-														<img class="program-logo" src="images/technologies/csharp.svg" alt="csharp logo">
-													</div>
-												</div>
-												
-												<div class="col-sm-6 d-flex flex-row justify-content-around mt-4 mt-md-0 px-0">
-													<div class="d-flex flex-column align-items-center px-1">
-														<img class="program-logo" src="images/technologies/wordpress.svg" alt="wordpress logo">
-													</div>
-													<div class="d-flex flex-column align-items-center px-1">
-														<img class="program-logo" src="images/technologies/php.svg" alt="php logo">
-													</div>
-													<div class="d-flex flex-column align-items-center px-1">
-														<img class="program-logo" src="images/technologies/bootstrap.svg" alt="bootstrap logo">
-													</div>
-													<div class="d-flex flex-column align-items-center px-1">
-														<img class="program-logo" src="images/technologies/sql.svg" alt="sql logo">
-													</div>
-												</div>
-												<div class="container mt-4 px-0 medium text-center">HTML | CSS | Javascript | C# | Wordpress | PHP | Bootstrap | SQL</div>
-											</div>
-										</div>
-									</div>
+								<div class="tab-content flex-grow-1">
 									
-									<div class="tab-pane container fade" id="projecten">
-										<h2>Projecten</h2>
-										<p class="small">Elk project heeft me iets nieuws geleerd. Hieronder vind je een selectie van mijn werk. Meer projecten en mijn code vind je op <a href="https://github.com/MikaDevelopNL" class="text-light fw-bold" target="_blank">GitHub</a>.</p>
-										<div class="mt-5 mb-2 mt-md-0 ms-md-2 pb-2 d-flex flex-column flex-md-row justify-content-md-between text-center text-md-start align-items-md-center gap-md-3 border-bottom border-2 border-light">
-											<div class="d-flex flex-column">
-												<div class="d-flex flex-column flex-md-row justify-content-between">
-													<h3 class="h5">Portfolio Website 1.0</h3>
-													<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" target="_blank" class="btn btn-dark text-light fw-bold align-self-center rounded-pill py-1 px-2 project-link">Project Website</a>
+									<div class="tab-pane h-100 active" id="welkom" role="tabpanel" aria-labelledby="welkom-tab" tabindex="0">
+										<div class="d-flex flex-column justify-content-center h-100">
+											<p class="bg-dark rounded-pill my-3 py-3 px-2 ps-md-4 text-primary full-stack-pill"><span class="live-indicator"><img src="images/technologies/live-indicator-orange.svg" alt=""></span> full-stack developer in ontwikkeling</p>
+											<h1 class="h1 fw-bold ms-1 text-white homepage-title ">"Gevormd door <span class="accent">uitdaging</span>,<br> gedreven door <span class="accent">resultaat</span>."</h1>
+											<div class="container mt-5 gap-1">
+												<div class="row">
+													<div class="col-sm-6 d-flex flex-row justify-content-around px-0">
+														<div class="d-flex flex-column align-items-center">
+															<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
+														</div>
+														<div class="d-flex flex-column align-items-center">
+															<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
+														</div>
+														<div class="d-flex flex-column align-items-center">
+															<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
+														</div>
+														<div class="d-flex flex-column align-items-center">
+															<img class="program-logo" src="images/technologies/csharp.svg" alt="csharp logo">
+														</div>
+													</div>
+
+													<div class="col-sm-6 d-flex flex-row justify-content-around mt-4 mt-md-0 px-0">
+														<div class="d-flex flex-column align-items-center px-1">
+															<img class="program-logo" src="images/technologies/wordpress.svg" alt="WordPress logo">
+														</div>
+														<div class="d-flex flex-column align-items-center px-1">
+															<img class="program-logo" src="images/technologies/php.svg" alt="php logo">
+														</div>
+														<div class="d-flex flex-column align-items-center px-1">
+															<img class="program-logo" src="images/technologies/bootstrap.svg" alt="bootstrap logo">
+														</div>
+														<div class="d-flex flex-column align-items-center px-1">
+															<img class="program-logo" src="images/technologies/sql.svg" alt="sql logo">
+														</div>
+													</div>
+													<div class="container mt-4 px-0 medium text-center">HTML | CSS | JavaScript | C# | WordPress | PHP | Bootstrap | SQL</div>
 												</div>
-												<p class="align-self-end">Dit was mijn eerste serieuze project nadat ik ongeveer drie maanden bezig was met het leren van webdevelopment.</p>
-											</div>
-											<div class="mb-2">
-												<img class="mb-2 mt-1 border border-3 border-dark rounded project-image" src="images/porfolio-1.0-screenshot.png" alt="">
 											</div>
 										</div>
-										<div class="mt-5 mb-2 mt-md-0 ms-md-2 pb-2 d-flex flex-column flex-md-row justify-content-md-between text-center text-md-start align-items-md-center gap-md-3">
-											<div class="d-flex flex-column">
-												<div class="d-flex flex-column flex-md-row justify-content-between">
-													<h3 class="h5">Comming Soon</h3>
-													<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" target="_blank" class="d-none btn btn-dark text-light fw-bold align-self-center rounded-pill py-1 px-2 project-link">Project Website</a>
-												</div>
-												<p>In proces...</p>
-											</div>
-											<div class="mb-2">
-												<img class="mb-2 mt-1 border border-3 border-dark rounded project-image" src="images/comming-soon.jpg" alt="">
-											</div>
-										</div>
-									</div>
-									
-									<div class="tab-pane container fade" id="leerproces">
 										
 									</div>
 									
-									<div class="tab-pane container fade" id="over-mij">
+									<div class="tab-pane h-100 fade" id="projecten" role="tabpanel" aria-labelledby="projecten-tab" tabindex="0">
+										<div class="d-flex flex-column justify-content-center h-100">
+											<h2 class="my-3 my-md-0">Projecten</h2>
+											<p class="small">Elk project heeft me iets nieuws geleerd. Hieronder vind je een selectie van mijn werk. Meer projecten en mijn code vind je op <a href="https://github.com/MikaDevelopNL" class="text-light fw-bold" rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
+											<div class="mt-5 mb-2 mt-md-0 ms-md-2 pb-2 d-flex flex-column flex-md-row justify-content-md-between text-center text-md-start align-items-md-center gap-md-3 border-bottom border-2 border-light">
+												<div class="d-flex flex-column">
+													<div class="d-flex flex-column flex-md-row justify-content-between">
+														<h3 class="h5">Portfolio Website 1.0</h3>
+														<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" rel="noopener noreferrer" target="_blank" class="btn btn-dark text-light fw-bold align-self-center rounded-pill py-1 px-2 project-link">Project Website</a>
+													</div>
+													<p class="align-self-end">Dit was mijn eerste serieuze project nadat ik ongeveer drie maanden bezig was met het leren van webdevelopment.</p>
+												</div>
+												<div class="mb-2">
+													<img class="mb-2 mt-1 border border-3 border-dark rounded project-image" src="images/porfolio-1.0-screenshot.png" alt="">
+												</div>
+											</div>
+											<div class="mt-5 mb-2 mt-md-0 ms-md-2 pb-2 d-flex flex-column flex-md-row justify-content-md-between text-center text-md-start align-items-md-center gap-md-3">
+												<div class="d-flex flex-column">
+													<div class="d-flex flex-column flex-md-row justify-content-between">
+														<h3 class="h5">Coming Soon</h3>
+														<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" rel="noopener noreferrer" target="_blank" class="d-none btn btn-dark text-light fw-bold align-self-center rounded-pill py-1 px-2 project-link">Project Website</a>
+													</div>
+													<p>In ontwikkeling...</p>
+												</div>
+												<div class="mb-2">
+													<img class="mb-2 mt-1 border border-3 border-dark rounded project-image" src="images/comming-soon.jpg" alt="">
+												</div>
+											</div>
+										</div>
 										
+									</div>
+									
+									<div class="tab-pane h-100 fade" id="leerproces" role="tabpanel" aria-labelledby="leerproces-tab" tabindex="0">
+										<div class="d-flex flex-column justify-content-center h-100">
+											
+										</div>
+									</div>
+									
+									<div class="tab-pane h-100 fade" id="over-mij" role="tabpanel" aria-labelledby="over-mij-tab" tabindex="0">
+										<div class="d-flex flex-column justify-content-center h-100">
+											
+										</div>
 									</div>
 								</div>
 						</div>
 						
-						
-						<div class="col-md-5 my-auto d-flex justify-content-center align-items-center">
+						<!-- Portret Home -->
+						<div class="col-md-5 d-flex justify-content-center align-items-center">
 							<div class="homepage-bg-image d-flex justify-content-center align-items-center p-5 w-75">
 								<img src="images/Portret-Mika2.0.jpeg" alt="portret foto Mika" class="img-thumbnail img-fluid homepage-image">
 
 								<div class="bg-dark text-primary py-2 px-3 fw-bold rounded-4 floating-label label-one">Zelfstandig</div>
 								<div class="bg-dark text-primary py-2 px-3 fw-bold rounded-4 floating-label label-two">Leergierig</div>
-								<div class="bg-dark text-primary py-2 px-3 fw-bold rounded-4 floating-label label-three">Disipline</div>
+								<div class="bg-dark text-primary py-2 px-3 fw-bold rounded-4 floating-label label-three">Discipline</div>
 							</div>
 						</div>
 					</div>
@@ -150,25 +161,25 @@
 			
 			<footer class="border-top border-secondary border-3">
 				<div class="container ">
-					<div class="d-flex py-2">
+					<div class="row py-2">
 						<div class="col-4 offset-1 col-md-6 offset-md-0 d-flex flex-md-row flex-column gap-3 align-items-md-center">
 							<div class="col-auto">
-								<a href="https://www.instagram.com/mikafios/" target="_blank">
+								<a href="https://www.instagram.com/mikafios/" rel="noopener noreferrer" target="_blank">
 									<img src="images/technologies/instagram.svg" alt="instagram logo">
 								</a>
 							</div>
 							<div class="col-auto">
-								<a href="https://github.com/MikaDevelopNL" target="_blank">
+								<a href="https://github.com/MikaDevelopNL" rel="noopener noreferrer" target="_blank">
 									<img src="images/technologies/github.svg" alt="github logo">
 								</a>
 							</div>
 							<div class="col-auto">
-								<a href="https://www.linkedin.com/in/mika-huibrechtse-4631a63ba/?isSelfProfile=true" target="_blank">
+								<a href="https://www.linkedin.com/in/mika-huibrechtse-4631a63ba/?isSelfProfile=true" rel="noopener noreferrer" target="_blank">
 									<img src="images/technologies/linkedin.svg" alt="linked-in logo">
 								</a>
 							</div>
 						</div>
-						<div class="col-7 col-md-3 offset-md-3 d-flex flex-column mt-3">
+						<div class="col-7 col-md-3 offset-md-3 d-flex flex-column mt-3  my-md-1">
 							<a href="https://github.com/MikaDevelopNL/PORTFOLIO-Mikadev" class="btn btn-primary rounded-pill align-self-end small py-3 fw-bold" target="_blank"><span class="live-indicator"><img src="images/technologies/live-indicator-green.svg" alt=""></span> Bekijk projecten</a>
 						</div>
 					</div>
