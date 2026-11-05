@@ -7,14 +7,14 @@
 /*Bootstrap styling*/
 
 :root {
-    --bs-primary: #344e41;
-    --bs-primary-rgb: rgb(52 78 65);
+    --bs-primary: #dad7cd;
+    --bs-primary-rgb: 218, 215, 205;
     --bs-secondary: #dad7cd;
-    --bs-secondary-rgb: rgb(218 215 205);
+    --bs-secondary-rgb: 218, 215, 205;
     --bs-body-bg: #344e41;
-    --bs-body-bg-rgb: rgb(52 78 65);
+    --bs-body-bg-rgb: 52, 78, 65;
     --bs-body-color: #dad7cd ;
-    --bs-body-color-rgb: rgb(218 215 205);
+    --bs-body-color-rgb: 218, 215, 205;
     --bs-body-font-family: "Roboto Mono", monospace;
 }
 
@@ -95,12 +95,25 @@
     position: absolute;
     box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.4), -1px -2px 4px rgba(255, 255, 255, 0.4);
     font-size: 0.8rem;
-    transition: 0.8s;
+    transition: 0.4s;
+    animation: floating-labels 3s ease-in-out infinite alternate;
 }
 
 .floating-label:hover {
-    transform: scale(1.1);
+    text-shadow: 0 0 10px rgb(250, 126, 97) !important;
+    cursor: pointer;
 }
+
+
+@keyframes floating-labels {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
 
 .label-one {
     top: 10%;
@@ -130,6 +143,24 @@
 .project-link:hover {
     background-color: #fa7e61;
 }
+
+.leerproces-card {
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.rounded-year {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.leerproces-year {
+    font-size: 0.7rem;
+    transform: translateZ(0);
+}
+
+
 /*footer styling*/
 
 
@@ -158,6 +189,10 @@
         transform: scale(0.85);
         opacity: 0.6;
     }
+}
+
+.bg-orange {
+    background-color: #fa7e61;
 }
 
 /*media queries styling*/
@@ -195,12 +230,21 @@
     .floating-label {
         font-size: 1.1rem;
     }
-}
+
+    .rounded-year {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .leerproces-year {
+        font-size: 0.8rem;
+    }
 
 @media (prefers-reduced-motion: reduce) {
-    .live-indicator img,
-    .floating-label {
-        animation: none;
-        transition: none;
+        .live-indicator img,
+        .floating-label {
+            animation: none;
+            transition: none;
+        }
     }
 }
