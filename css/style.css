@@ -33,6 +33,10 @@
     --bs-nav-link-hover-color: #dad7cd;
 }
 
+.dropdown-item:active {
+    background-color: #fa7e61;
+}
+
 .portfolio {
     min-height: 100vh;
     display: flex;
@@ -71,9 +75,6 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.accent {
-    color: #fa7e61;
-}
 
 .program-logo {
     width: 2rem;
@@ -143,6 +144,14 @@
     background-color: #fa7e61;
 }
 
+.project-content {
+    display: none;
+}
+
+.project-content.active {
+    display: block;
+}
+
 .leerproces-card {
     min-height: 350px;
     overflow: hidden;
@@ -192,6 +201,15 @@
 
 .bg-orange {
     background-color: #fa7e61;
+}
+
+.bg-gray {
+    background-color: dimgray !important;
+    opacity: 60% !important;
+}
+
+.accent {
+    color: #fa7e61;
 }
 
 .mobile-hidden {

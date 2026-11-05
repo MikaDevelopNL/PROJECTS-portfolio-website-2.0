@@ -37,7 +37,7 @@
 			<main class="portfolio-main">
 				<div class="container my-3 h-100">
 					<div class="row h-100">
-						<div class="col-md-7 d-flex flex-column my-2">
+						<div class="col-lg-7 d-flex flex-column my-2">
 							<ul class="nav nav-tabs flex-nowrap justify-content-center justify-content-sm-start home-tabs fw-bold" aria-label="Portfolio navigatie" role="tablist">
 								<li class="nav-item">
 									<a href="#welkom" class="nav-link active p-2 px-md-3" data-bs-toggle="tab" id="welkom-tab" role="tab" aria-controls="welkom" aria-selected="true">Welkom</a>
@@ -58,9 +58,9 @@
 
 									<!-- Welkom -->
 									<div class="tab-pane h-100 active" id="welkom" role="tabpanel" aria-labelledby="welkom-tab" tabindex="0">
-										<div class="d-flex flex-column justify-content-center h-100">
+										<div class="d-flex flex-column justify-content-center mx-3 mx-lg-0 h-100">
 											<p class="bg-dark rounded-pill my-3 py-3 px-2 ps-md-4 text-primary full-stack-pill"><span class="live-indicator"><img src="images/technologies/live-indicator-orange.svg" alt=""></span> full-stack developer in ontwikkeling</p>
-											<h1 class="h1 fw-bold ms-1 text-white homepage-title ">"Gevormd door <span class="accent">uitdaging</span>,<br> gedreven door <span class="accent">resultaat</span>."</h1>
+											<h1 class="h1 fw-bold ms-1 text-white homepage-title ">"Gevormd door <span class="accent">uitdaging</span>,<br>&nbsp;gedreven door <span class="accent">resultaat</span>."</h1>
 											<div class="container mt-3 mb-md-2 gap-1">
 												<div class="row">
 													<div class="col-sm-6 d-flex flex-row justify-content-around px-0">
@@ -101,31 +101,27 @@
 
 									<!-- Projecten -->
 									<div class="tab-pane h-100 fade" id="projecten" role="tabpanel" aria-labelledby="projecten-tab" tabindex="0">
-										<div class="d-flex flex-column justify-content-center h-100">
-											<h2 class="my-3 my-md-1">Projecten</h2>
-											<p class="small">Elk project heeft me iets nieuws geleerd. Hieronder vind je een selectie van mijn werk. Meer projecten en mijn code vind je op <a href="https://github.com/MikaDevelopNL" class="text-light fw-bold" rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
-											<div class="mt-5 mb-2 mt-md-0 ms-md-2 pb-2 d-flex flex-column flex-md-row justify-content-md-between text-center text-md-start align-items-md-center gap-md-3 border-bottom border-2 border-light">
-												<div class="d-flex flex-column">
-													<div class="d-flex flex-column flex-md-row justify-content-between">
-														<h3 class="h5">Portfolio Website 1.0</h3>
-														<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" rel="noopener noreferrer" target="_blank" class="btn btn-dark text-light fw-bold align-self-center rounded-pill py-1 px-2 project-link">Project Website</a>
-													</div>
-													<p class="align-self-end">Dit was mijn eerste serieuze project nadat ik ongeveer drie maanden bezig was met het leren van webdevelopment.</p>
-												</div>
-												<div class="mb-2">
-													<img class="mb-2 mt-1 border border-3 border-dark rounded project-image" src="images/porfolio-1.0-screenshot.png" alt="">
-												</div>
+										<div class="d-flex flex-column mt-3 mx-3 mx-lg-0 h-100">
+											<div class="dropdown">
+												<button type="button" class="btn btn-dark dropdown-toggle js-dropdown-label ms-0 ms-md-3 px-5 fw-b" data-bs-toggle="dropdown">Projectoverzicht</button>
+												<ul class="dropdown-menu bg-primary text-dark">
+													<li class="">
+														<a class="dropdown-item text-dark js-dropdown-item" href="#portfolio-1">Portfolio 1.0</a>
+													</li>
+													<li class="">
+														<a class="dropdown-item disabled bg-gray text-dark js-dropdown-item" href="#ontwikkeling">In ontwikkeling</a>
+													</li>
+													<li><hr class="dropdown-divider"></li>
+													<li><a href="https://github.com/MikaDevelopNL" class="text-dark fw-bold dropdown-item" rel="noopener noreferrer" target="_blank"><span><img src="images/technologies/github-dark.svg" alt="GitHub"></span> GitHub</a>
+													</li>
+												</ul>
 											</div>
-											<div class="mt-5 mb-2 mt-md-0 ms-md-2 pb-2 d-flex flex-column flex-md-row justify-content-md-between text-center text-md-start align-items-md-center gap-md-3">
-												<div class="d-flex flex-column">
-													<div class="d-flex flex-column flex-md-row justify-content-between">
-														<h3 class="h5">Coming Soon</h3>
-														<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" rel="noopener noreferrer" target="_blank" class="d-none btn btn-dark text-light fw-bold align-self-center rounded-pill py-1 px-2 project-link">Project Website</a>
-													</div>
-													<p>In ontwikkeling...</p>
+											
+											<div class="container mt-2 mx-2 mx-lg-4">
+												<div id="portfolio-1" class="project-content active">
+													
 												</div>
-												<div class="mb-2">
-													<img class="mb-2 mt-1 border border-3 border-dark rounded project-image" src="images/comming-soon.jpg" alt="">
+												<div id="ontwikkeling" class="project-content">
 												</div>
 											</div>
 										</div>
@@ -134,7 +130,7 @@
 
 									<!-- Leerproces -->
 									<div class="tab-pane h-100 fade" id="leerproces" role="tabpanel" aria-labelledby="leerproces-tab" tabindex="0">
-										<div class="d-flex flex-column my-3 h-100">
+										<div class="d-flex flex-column my-3 mx-3 mx-lg-0 h-100 ">
 											<div class="carousel slide" id="tijdlijn">
 												
 												<div class="carousel-indicators">
@@ -231,16 +227,16 @@
 									
 									<!-- Over mij -->
 									<div class="tab-pane h-100 fade" id="over-mij" role="tabpanel" aria-labelledby="over-mij-tab" tabindex="0">
-										<div class="d-flex flex-column my-3 my-md-0 gap-1 justify-content-center h-100">
+										<div class="d-flex flex-column my-3 my-md-1 gap-1 justify-content-center mx-3 mx-lg-0 h-100">
 											<div>
 												<h2 class="h6 fw-bold">Wie ben ik?</h2>
 												<p class="small ps-3">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
 											</div>
-											<div>
+											<div class="border-2 border-top border-bottom pt-2 border-white border-opacity-25">
 												<h2 class="h6 fw-bold">Wat doe ik?</h2>
 												<p class="small ps-3">Sinds december 2025 verdiep ik mij intensief in software development. Ik bouw zelfstandig projecten, leer nieuwe technieken en vraag actief om feedback om mezelf te verbeteren. Mijn interesse ligt momenteel vooral bij frontend development, maar mijn doel is om mij uiteindelijk te ontwikkelen tot full-stack developer.</p>
 											</div>
-											<div>
+											<div class="pt-2">
 												<h2 class="h6 fw-bold">Wat vind ik leuk?</h2>
 												<p class="small ps-3">Naast development haal ik veel energie uit een actieve levensstijl. Ik houd mij bezig met sporten zoals padel, hardlopen en wielrennen. Daarnaast geniet ik van gamen, voetbal kijken en nieuwe dingen ontdekken. Ik sta altijd open voor een nieuwe uitdaging of avontuur!</p>
 											</div>
@@ -250,7 +246,7 @@
 						</div>
 						
 						<!-- Portret Home -->
-						<div class="col-md-5 d-flex justify-content-center align-items-center">
+						<div class="col-lg-5 mt-4 mt-lg-0 d-flex justify-content-center align-items-center">
 							<div class="homepage-bg-image d-flex justify-content-center align-items-center p-5 w-75">
 								<img src="images/Portret-Mika2.0.jpeg" alt="portret foto Mika" class="img-thumbnail img-fluid homepage-image">
 
@@ -266,7 +262,7 @@
 			
 			<footer class="border-top border-secondary border-2">
 				<div class="container ">
-					<div class="row py-4 py-md-1">
+					<div class="row py-4 py-md-3">
 						<div class="col-4 offset-1 col-md-5 offset-md-0 d-flex flex-md-row flex-column gap-3 align-items-md-center">
 							<div class="col-auto">
 								<a href="https://www.instagram.com/mikafios/" rel="noopener noreferrer" target="_blank">
