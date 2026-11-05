@@ -172,7 +172,7 @@
     vertical-align: middle;
     display: inline-block;
     
-    animation: pulse-live 2.5s infinite ease-in-out;
+    animation: pulse-live 2s infinite ease-in-out;
 }
 
 @keyframes pulse-live {
@@ -192,6 +192,10 @@
 
 .bg-orange {
     background-color: #fa7e61;
+}
+
+.mobile-hidden {
+    display: none;
 }
 
 /*media queries styling*/
@@ -226,6 +230,11 @@
         overflow-y: hidden;
     }
 
+    .live-indicator img {
+        width: 18px;
+        height: 18px;
+    }
+
     .floating-label {
         font-size: 1.1rem;
     }
@@ -237,6 +246,10 @@
     
     .leerproces-year {
         font-size: 0.8rem;
+    }
+
+    .mobile-hidden {
+        display: inline-block;
     }
 
 @media (prefers-reduced-motion: reduce) {
