@@ -80,6 +80,18 @@
     width: 2rem;
 }
 
+.leerproces-container {
+
+}
+
+.leerproces-track {
+
+}
+
+.leerproces-card {
+
+}
+
 .homepage-image {
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -131,13 +143,14 @@
 }
 
 .project-image {
-    width: 200px;
+    width: 100%;
     aspect-ratio: 2 / 1;
     object-fit: cover;
 }
 
 .project-link {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.4), -1px -2px 4px rgba(255, 255, 255, 0.4);
 }
 
 .project-link:hover {
@@ -151,6 +164,7 @@
 .project-content.active {
     display: block;
 }
+
 
 .leerproces-card {
     min-height: 350px;
@@ -255,6 +269,14 @@
 
     .floating-label {
         font-size: 1.1rem;
+    }
+
+    .project-image {
+        width: 250px;
+    }
+
+    .project-link {
+        font-size: 1.2rem;
     }
 
     .rounded-year {

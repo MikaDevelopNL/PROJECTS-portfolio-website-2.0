@@ -117,11 +117,20 @@
 												</ul>
 											</div>
 											
-											<div class="container mt-2 mx-2 mx-lg-4">
+											<div class="mt-1 mx-2 mx-lg-0 me-lg-0">
 												<div id="portfolio-1" class="project-content active">
-													
+													<h2 class="h5 fw-bold text-center mt-2 pb-1 border-1 border-bottom border-primary">Portfolio 1.0</h2>
+													<div class="my-4 my-lg-3">
+														<p class="small">Mijn eerste volledige portfolio website, waarin ik mijn projecten, vaardigheden en ontwikkeling als software developer presenteer. De website is volledig zelf ontworpen en gebouwd met HTML en CSS. Hierbij heb ik veel gewerkt met Flexbox, Grid en responsive design om een overzichtelijke website te maken die goed werkt op mobiel, tablet en desktop.<br>
+															Tijdens dit project heb ik geleerd om zelfstandig meerdere pagina's op te bouwen, een duidelijke HTML-structuur te creëren en Git en GitHub te gebruiken voor versiebeheer.</p>
+													</div>
+													<div class="d-flex flex-column flex-lg-row justify-content-around">
+														<img class="mb-2 mt-1 border border-4 border-dark rounded project-image" role="button" data-bs-toggle="modal" data-bs-target="#projectModal" src="images/porfolio-1.0-screenshot.png" alt="">
+														<a href="https://mikadevelopnl.github.io/PROJECTS-Portfolio-Website/" rel="noopener noreferrer" target="_blank" class="btn btn-dark text-light fw-bold align-self-center rounded-pill mt-3 mt-lg-0 py-2 px-4 project-link">Project Website</a>
+													</div>
 												</div>
 												<div id="ontwikkeling" class="project-content">
+													In ontwikkeling.....
 												</div>
 											</div>
 										</div>
@@ -131,97 +140,77 @@
 									<!-- Leerproces -->
 									<div class="tab-pane h-100 fade" id="leerproces" role="tabpanel" aria-labelledby="leerproces-tab" tabindex="0">
 										<div class="d-flex flex-column my-3 mx-3 mx-lg-0 h-100 ">
-											<div class="carousel slide" id="tijdlijn">
+											<div class="leerproces-container w-100 h-100">
 												
-												<div class="carousel-indicators">
-													<button type="button" data-bs-target="#tijdlijn" data-bs-slide-to="0" class="active"></button>
-													<button type="button" data-bs-target="#tijdlijn" data-bs-slide-to="1"></button>
-													<button type="button" data-bs-target="#tijdlijn" data-bs-slide-to="2"></button>
-												</div>
-												
-												<div class="carousel-inner">
-													
-													<div class="carousel-item active">
-														<div class="card w-75 w-md-50  mx-auto bg-primary text-dark leerproces-card">
-															<div class="d-flex gap-3 gap-md-4 align-items-center py-3 border-bottom border-2 border-dark">
-																<div class="bg-orange ms-3 ms-md-5 d-flex flex-column text-center justify-content-center align-items-ceneter rounded-circle rounded-year">
-																	<p class="m-0 leerproces-year"><strong>2025</strong></p>
-																	<p class="m-0 leerproces-year">Dec</p>
-																</div>
-																<h3 class="h5">Waar het begon?</h3>
+												<div class="d-flex justify-content-center gap-2 leerproces-track">
+													<div class="card bg-primary text-dark leerproces-card">
+														<div class="d-flex gap-3 gap-md-4 align-items-center py-3 border-bottom border-2 border-dark">
+															<div class="bg-orange ms-3 ms-md-5 d-flex flex-column text-center justify-content-center align-items-center rounded-circle rounded-year">
+																<p class="m-0 leerproces-year"><strong>2025</strong></p>
+																<p class="m-0 leerproces-year">Dec</p>
 															</div>
-															<p class="small p-4">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
-															<div class="d-flex justify-content-center gap-3 pb-5">
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
-																</div>
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
-																</div>
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
-																</div>
+															<h3 class="h5">Waar het begon?</h3>
+														</div>
+														<p class="small p-4">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
+														<div class="d-flex justify-content-center gap-3 pb-5">
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
+															</div>
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
+															</div>
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
 															</div>
 														</div>
 													</div>
-													
-													<div class="carousel-item">
-														<div class="card w-75 w-md-50  mx-auto bg-primary text-dark leerproces-card">
-															<div class="d-flex gap-3 gap-md-4 align-items-center py-3 border-bottom border-2 border-dark">
-																<div class="bg-orange ms-3 ms-md-5 d-flex flex-column text-center justify-content-center align-items-ceneter rounded-circle rounded-year">
-																	<p class="m-0 leerproces-year"><strong>2026</strong></p>
-																	<p class="m-0 leerproces-year">Mrt</p>
-																</div>
-																<h3 class="h5">Wat doe ik momenteel?</h3>
-															</div>
-															<p class="small p-4">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
-															<div class="d-flex justify-content-center gap-3 pb-5">
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
-																</div>
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
-																</div>
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
-																</div>
-															</div>
-														</div>
-													</div>
-													
-													<div class="carousel-item">
-														<div class="card w-75 w-md-50  mx-auto bg-primary text-dark leerproces-card">
-															<div class="d-flex gap-3 gap-md-4 align-items-center py-3 border-bottom border-2 border-dark">
-																<div class="bg-orange ms-3 ms-md-5 d-flex flex-column text-center justify-content-center align-items-ceneter rounded-circle rounded-year">
-																	<p class="m-0 leerproces-year"><strong>2026</strong></p>
-																	<p class="m-0 leerproces-year">Aug</p>
-																</div>
-																<h3 class="h5">Wat wil ik bereiken?</h3>
-															</div>
-															<p class="small p-4">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
-															<div class="d-flex justify-content-center gap-3 pb-5">
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
-																</div>
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
-																</div>
-																<div class="d-flex flex-column align-items-center">
-																	<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
-																</div>
-															</div>
-														</div>
-													</div>
-													
-												</div>
 
-												<button class="carousel-control-prev" type="button" data-bs-target="#tijdlijn" data-bs-slide="prev">
-													<span class="carousel-control-prev-icon"></span>
-												</button>
-												<button class="carousel-control-next" type="button" data-bs-target="#tijdlijn" data-bs-slide="next">
-													<span class="carousel-control-next-icon"></span>
-												</button>
+													<div class="card bg-primary text-dark leerproces-card">
+														<div class="d-flex gap-3 gap-md-4 align-items-center py-3 border-bottom border-2 border-dark">
+															<div class="bg-orange ms-3 ms-md-5 d-flex flex-column text-center justify-content-center align-items-center rounded-circle rounded-year">
+																<p class="m-0 leerproces-year"><strong>2026</strong></p>
+																<p class="m-0 leerproces-year">Mrt</p>
+															</div>
+															<h3 class="h5">Wat doe ik momenteel?</h3>
+														</div>
+														<p class="small p-4">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
+														<div class="d-flex justify-content-center gap-3 pb-5">
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
+															</div>
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
+															</div>
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
+															</div>
+														</div>
+													</div>
+
+													<div class="card bg-primary text-dark leerproces-card">
+														<div class="d-flex gap-3 gap-md-4 align-items-center py-3 border-bottom border-2 border-dark">
+															<div class="bg-orange ms-3 ms-md-5 d-flex flex-column text-center justify-content-center align-items-center rounded-circle rounded-year">
+																<p class="m-0 leerproces-year"><strong>2026</strong></p>
+																<p class="m-0 leerproces-year">Aug</p>
+															</div>
+															<h3 class="h5">Wat wil ik bereiken?</h3>
+														</div>
+														<p class="small p-4">Ik ben Mika, een gedreven, leergierig en veelzijdig persoon. Door verschillende ervaringen en werkgebieden heb ik een brede kijk ontwikkeld. Ik werk graag nauwkeurig, denk bewust na over mijn keuzes en ben niet bang om nieuwe uitdagingen aan te gaan. Stilzitten is niets voor mij!</p>
+														<div class="d-flex justify-content-center gap-3 pb-5">
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/html.svg" alt="html logo">
+															</div>
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/css.svg" alt="css logo">
+															</div>
+															<div class="d-flex flex-column align-items-center">
+																<img class="program-logo" src="images/technologies/javascript.svg" alt="javascript logo">
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
+										
 										</div>
 									</div>
 									
@@ -282,8 +271,8 @@
 						</div>
 						<div class="col-7 col-md-7 my-2 d-flex justify-content-end align-content-center flex-wrap">
 							<address class="d-flex flex-column flex-xl-row gap-2 text-end small mb-0 py-2 fw-bold" > 
-								<a class="link-underline link-underline-opacity-0 text-white" href="tel:+31640122985">0640122985<span class="mobile-hidden ps-1">|</span></a>
-								<a class="link-underline link-underline-opacity-0 text-white" href="mailto:mikadeveloper@hotmail.com">mikadeveloper@hotmail.com<span class="mobile-hidden ps-1">|</span></a>
+								<a class="link-underline link-underline-opacity-0 text-primary" href="tel:+31640122985">0640122985<span class="mobile-hidden ps-1">|</span></a>
+								<a class="link-underline link-underline-opacity-0 text-primary" href="mailto:mikadeveloper@hotmail.com">mikadeveloper@hotmail.com<span class="mobile-hidden ps-1">|</span></a>
 								<p class="m-0">Achthuizen, Zuid-Holland</p>
 							</address>
 						</div>
@@ -293,6 +282,20 @@
 					<p class="bg-dark text-end mt-auto mb-0 py-1 pe-3"><span class="small me-1">&#169;</span>2026 Mikadev.</p>
 				</div>
 			</footer>
-		</div>		
+		</div>
+
+
+		<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content bg-dark">
+					<div class="modal-body p-2">
+						<img
+								src="images/porfolio-1.0-screenshot.png"
+								class="img-fluid rounded"
+								alt="Vergrote screenshot van mijn eerste portfolio website">
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
