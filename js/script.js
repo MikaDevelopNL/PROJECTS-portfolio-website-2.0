@@ -32,26 +32,65 @@ dropdownItems.forEach(item => {
 // zorgt dat er een mooie slide komt 
 
 const leerprocesCards = document.querySelectorAll('.leerproces-card');
-const activeCard = document.querySelector('.leerproces-card-main');
 const leerprocesContainer = document.querySelector('.leerproces-container');
 const leerprocesTrack = document.querySelector('.leerproces-track');
 const leerprocesTab = document.getElementById('leerproces-tab');
+let activeIndex = Math.floor(leerprocesCards.length / 2);
 
+const prevButton = document.getElementById('prev-btn');
+const nextButton = document.getElementById('next-btn');
+
+function centerCards() {
+    const activeCard = leerprocesCards[activeIndex];
+
+    leerprocesCards.forEach(card => {
+        card.classList.remove('is-active');
+    })
+
+    activeCard.classList.add('is-active');
+    
+    const activeCardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
+    const containerCenter = leerprocesContainer.offsetWidth / 2;
+
+
+    const offset = activeCardCenter - containerCenter;
+
+    leerprocesTrack.style.transform = `translateX(${-offset}px)`;
+    
+}
+
+function nextCard() {
+    activeIndex++;
+    
+    if(activeIndex === leerprocesCards.length) {
+        activeIndex = 0;
+    }
+    
+    centerCards();
+}
+
+function prevCard() {
+    activeIndex--;
+    
+    if(activeIndex === -1) {
+        activeIndex = leerprocesCards.length - 1;
+    }
+    
+    centerCards();
+}
+
+prevButton.addEventListener('click', () => {
+    prevCard();
+});
+
+nextButton.addEventListener('click', () => {
+    nextCard();
+});
 
 leerprocesTab.addEventListener('shown.bs.tab', () => {
-    console.log('Leerproces-tab is zichtbaar');
-})
-
-const containerRect = leerprocesContainer.getBoundingClientRect();
-const activeCardRect = activeCard.getBoundingClientRect();
-
-const containerCenter = containerRect.left + containerRect.width / 2;
-const activeCardCenter = activeCardRect.left + activeCardRect.width / 2;
+    centerCards();
+});
 
 
-const offset = activeCardCenter - containerCenter;
-
-
-leerprocesTrack.style.transform = `translateX(${-offset}px)`;
 
 

@@ -82,15 +82,52 @@
 
 .leerproces-container {
     overflow: hidden;
+    position: relative;
 }
 
 .leerproces-track {
-    flex-shrink: 1;
-    transition: transform 0.5s ease;
+    transition: transform 3s ease;
 }
 
 .leerproces-card {
-    flex: 0 0 40%;
+    flex: 0 0 100%;
+    position: relative;
+    opacity: 40%;
+    transform: scale(0.95);
+    transition: transform 2s ease;
+}
+
+.leerproces-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.leerproces-card.is-active {
+    opacity: 100%;
+    transform: scale(1);
+}
+
+.leerproces-card.is-active::after {
+    opacity: 0;
+}
+
+#prev-btn, #next-btn {
+    position: relative;
+    background-color: #23262a;
+    border: none;
+    color: whitesmoke;
+}
+
+#prev-btn {
+    
+}
+
+#next-btn {
+    
 }
 
 .rounded-circle {
@@ -288,6 +325,26 @@
     .rounded-year {
         width: 50px;
         height: 50px;
+    }
+
+    .leerproces-card {
+        flex: 0 0 50%;
+    }
+
+    #prev-btn, #next-btn {
+        position: absolute;
+        top: 40%;
+        width: 50px;
+        border-radius: 100%;
+    }
+
+    #prev-btn {
+        left: 15%;
+    }
+
+    #next-btn {
+        
+        left: 80%;
     }
     
     .leerproces-year {
