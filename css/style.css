@@ -93,7 +93,7 @@
     flex: 0 0 100%;
     position: relative;
     opacity: 40%;
-    transform: scale(0.95);
+    transform: scale(0.90);
     transition: transform 2s ease;
 }
 
@@ -113,6 +113,10 @@
 
 .leerproces-card.is-active::after {
     opacity: 0;
+}
+
+.program-logo-leerproces {
+    width: 1.8rem;
 }
 
 #prev-btn, #next-btn {
@@ -322,23 +326,22 @@
     }
 
     .leerproces-card {
-        flex: 0 0 50%;
+        flex: 0 0 60%;
     }
 
     #prev-btn, #next-btn {
         position: absolute;
         top: 40%;
         width: 50px;
-        border-radius: 100%;
+        border-radius: 40%;
     }
-
+    
     #prev-btn {
-        left: 15%;
+        left: 10%;
     }
 
     #next-btn {
-        
-        left: 80%;
+        right: 10%;
     }
     
     .leerproces-year {
