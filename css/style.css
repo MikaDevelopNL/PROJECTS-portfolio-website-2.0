@@ -81,16 +81,22 @@
 }
 
 .leerproces-container {
-
+    overflow: hidden;
 }
 
 .leerproces-track {
-
+    flex-shrink: 1;
+    transition: transform 0.5s ease;
 }
 
 .leerproces-card {
-
+    flex: 0 0 40%;
 }
+
+.rounded-circle {
+    flex-shrink: 0;
+}
+
 
 .homepage-image {
     aspect-ratio: 1 / 1;
