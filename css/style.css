@@ -120,15 +120,9 @@
     background-color: #23262a;
     border: none;
     color: whitesmoke;
+    width: 40%;
 }
 
-#prev-btn {
-    
-}
-
-#next-btn {
-    
-}
 
 .rounded-circle {
     flex-shrink: 0;
