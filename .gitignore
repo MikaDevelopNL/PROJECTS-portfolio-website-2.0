@@ -1,1 +1,9 @@
 .idea/
+
+# .NET build bestanden
+[Bb]in/
+[Oo]bj/
+
+# Gebruikersinstellingen
+*.user
+*.suo
