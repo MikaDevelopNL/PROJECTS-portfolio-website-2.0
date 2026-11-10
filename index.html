@@ -28,7 +28,7 @@
 					<div class="container">
 						<div class="d-flex justify-content-between align-items-center w-100 py-2">
 								<a href="#" class="navbar-brand fw-bold logo-title ">MikaDev.</a>
-								<a class="btn btn-primary rounded-pill py-2 px-4" href="">Contact</a>
+								<a class="btn btn-primary rounded-pill py-2 px-4" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Contact</a>
 						</div>
 					</div>
 				</nav>
@@ -120,7 +120,7 @@
 											<div class="mt-1 mx-2 mx-lg-0 me-lg-0">
 												<div id="portfolio-1" class="project-content active">
 													<div class="mt-3 mt-lg-4">
-														<p class="small">Mijn eerste volledige portfolio website, waarin ik mijn projecten, vaardigheden en ontwikkeling als software developer presenteer. De website is volledig zelf ontworpen en gebouwd met HTML en CSS. Hierbij heb ik veel gewerkt met Flexbox, Grid en responsive design om een overzichtelijke website te maken die goed werkt op mobiel, tablet en desktop.<br>
+														<p class="small">Mijn eerste volledige portfolio website, waarin ik mijn projecten, vaardigheden en ontwikkeling als software developer presenteer. De website is volledig zelf ontworpen en gebouwd met HTML en CSS. Hierbij heb ik veel gewerkt met Flexbox, Grid en responsieve design om een overzichtelijke website te maken die goed werkt op mobiel, tablet en desktop.<br>
 															Tijdens dit project heb ik geleerd om zelfstandig meerdere pagina's op te bouwen, een duidelijke HTML-structuur te creëren en Git en GitHub te gebruiken voor versiebeheer.</p>
 													</div>
 													<div class="d-flex flex-column flex-lg-row justify-content-around">
@@ -331,20 +331,58 @@
 					<p class="bg-dark text-end mt-auto mb-0 py-1 pe-3"><span class="fs-5 me-1">&#169;</span>2026 Mikadev.</p>
 				</div>
 			</footer>
-		</div>
 
 
-		<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg">
-				<div class="modal-content bg-dark">
-					<div class="modal-body p-2">
-						<img
-								src="images/porfolio-1.0-screenshot.png"
-								class="img-fluid rounded"
-								alt="Vergrote screenshot van mijn eerste portfolio website">
+
+			<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg">
+					<div class="modal-content bg-dark">
+						<div class="modal-body p-2">
+							<img
+									src="images/porfolio-1.0-screenshot.png"
+									class="img-fluid rounded"
+									alt="Vergrote screenshot van mijn eerste portfolio website">
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content border-3 border-primary">
+
+						<div class="modal-header">
+							<h2 class="modal-title">Contactformulier</h2>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+						</div>
+						
+						<div class="modal-body p-4">
+							<p class="small">Vul het onderstaande formulier in en ik neem zo snel mogelijk contact met je op.</p>
+							<form action="">
+								<div class="mb-3">
+									<label for="name">Naam:</label>
+									<input type="text" name="name" id="name" class="form-control mt-1" required>
+								</div>
+								<div class="mb-3">
+									<label for="email">E-Mail:</label>
+									<input type="email" name="email" id="email" class="form-control mt-1" required>
+								</div>
+								<div class="mb-3">
+									<label for="subject">Onderwerp: (optioneel)</label>
+									<input type="text" name="subject" id="subject" class="form-control mt-1">
+								</div>
+								<div class="mb-3">
+									<label for="comment">Opmerking:</label>
+									<textarea name="comment" id="comment" class="form-control mt-1" rows="4" required></textarea>
+								</div>
+								<button type="submit" class="btn-primary btn w-100">Verstuur</button>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</body>
 </html>
