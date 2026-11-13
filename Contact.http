@@ -1,0 +1,9 @@
+POST http://localhost:5159/api/contact
+Content-Type: application/json
+
+{
+  "name": "Mika",
+  "email": "mika@example.com",
+  "subject": "Testbericht",
+  "message": "Dit is een test vanuit Rider."
+}

@@ -167,7 +167,7 @@
 																<p class="m-0 leerproces-year"><strong>2026</strong></p>
 																<p class="m-0 leerproces-year">Mrt</p>
 															</div>
-															<h3 class="h6 m-0">Keuze voor mijn opleiding.</h3>
+															<h3 class="h6 m-0">Keuze voor mijn opleiding?</h3>
 														</div>
 														<p class="small m-0 py-2 px-4">Wat begon als zelfstandig leren, groeide uit tot een serieuze keuze voor mijn toekomst. Ik besteedde veel tijd aan programmeren en merkte dat ik mij verder wilde ontwikkelen. Omdat ik geloof dat je vooral in de praktijk veel leert, besloot ik voor een BBL-opleiding Software Developer niveau 4 te gaan. In maart 2026 schreef ik mij in en begon ik aan de zoektocht naar een geschikt leerbedrijf.</p>
 														<div class="d-flex justify-content-center gap-3 mt-auto pb-4">
@@ -357,8 +357,8 @@
 						</div>
 						
 						<div class="modal-body p-4">
-							<p class="small">Vul het onderstaande formulier in en ik neem zo snel mogelijk contact met je op.</p>
-							<form action="">
+							<p class="small" id="contact-intro">Vul het onderstaande formulier in en ik neem zo snel mogelijk contact met je op.</p>
+							<form method="post" id="contactForm">
 								<div class="mb-3">
 									<label for="name">Naam:</label>
 									<input type="text" name="name" id="name" class="form-control mt-1" required>
@@ -368,15 +368,24 @@
 									<input type="email" name="email" id="email" class="form-control mt-1" required>
 								</div>
 								<div class="mb-3">
-									<label for="subject">Onderwerp: (optioneel)</label>
-									<input type="text" name="subject" id="subject" class="form-control mt-1">
+									<label for="subject">Onderwerp:</label>
+									<input type="text" name="subject" id="subject" class="form-control mt-1" required>
 								</div>
 								<div class="mb-3">
-									<label for="comment">Opmerking:</label>
-									<textarea name="comment" id="comment" class="form-control mt-1" rows="4" required></textarea>
+									<label for="message">Opmerking:</label>
+									<textarea name="message" id="message" class="form-control mt-1" rows="4" required></textarea>
 								</div>
 								<button type="submit" class="btn-primary btn w-100">Verstuur</button>
 							</form>
+							
+							<div class="text-center d-none" id="success-message">
+								<h3>Bedankt voor je bericht!</h3>
+								<p>Ik heb je bericht ontvangen en neem zo snel mogelijk contact met je op.</p>
+							</div>
+
+							<div id="error-message" class="alert alert-danger d-none" role="alert">
+								Je bericht kon niet worden verstuurd. Probeer het later opnieuw.
+							</div>
 						</div>
 						
 					</div>

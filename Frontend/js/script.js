@@ -92,5 +92,50 @@ leerprocesTab.addEventListener('shown.bs.tab', () => {
 });
 
 
+// Contact formulier verzenden naar C# 
+
+const contactForm = document.getElementById("contactForm");
+const successMessage = document.getElementById('success-message');
+const contactIntro = document.getElementById('contact-intro');
+const errorMessage = document.getElementById('error-message');
+
+console.log(contactForm);
+
+contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    errorMessage.classList.add('d-none');
+    
+    const formData = new FormData(contactForm);
+    const contactData = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+    };
+
+    fetch('http://localhost:5159/api/contact', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(contactData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Versturen mislukt');
+        }
+        
+        contactForm.classList.add('d-none');
+        contactIntro.classList.add('d-none');
+        successMessage.classList.remove('d-none');
+        
+    }) .catch(error => {
+    console.error(error);
+    errorMessage.classList.remove('d-none');
+    });
+
+}) 
+
+
 
 
